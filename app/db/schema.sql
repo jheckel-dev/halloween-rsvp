@@ -9,17 +9,24 @@ CREATE TABLE guest (
     costume VARCHAR(100)
 );
 
+CREATE TABLE costume (
+    guest VARCHAR(100),
+    costume VARCHAR(100),
+    FOREIGN KEY (guest)
+    REFERENCES guest(name)
+);
+
 CREATE TABLE song (
+    guest VARCHAR(100),
     title VARCHAR(100),
     artist VARCHAR(100),
-    guest VARCHAR(100),
     FOREIGN KEY (guest)
     REFERENCES guest(name)
 );
 
 CREATE TABLE snack (
-    food VARCHAR(100),
     guest VARCHAR(100),
+    food VARCHAR(100),
     FOREIGN KEY (guest)
     REFERENCES guest(name)
 );

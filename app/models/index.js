@@ -1,8 +1,20 @@
-const costume = require("./costume");
-const user = require("./user");
-const snack = require("./snack");
-const song = require("./song");
+const Costume = require("./costume");
+const User = require("./user");
+const Snack = require("./snack");
+const Song = require("./song");
+const Guest = require("./guest")
 
-// stuff
 
-module.exports = { costume, user, snack, song };
+Costume.belongsTo(Guest, {
+    foreignKey: 'guest'
+})
+
+Song.belongsTo(Guest, {
+    foreignKey: 'guest'
+})
+
+Snack.belongsTo(Guest, {
+    foreignKey: 'guest'
+})
+
+module.exports = { Costume, User, Snack, Song };

@@ -1,17 +1,24 @@
 USE party_db;
 
-INSERT INTO guest (name, rsvp, costume) 
-VALUES ("Krista",TRUE,"Dinosaur"),
-        ("Jalen",TRUE,"Pumpkin"),
-        ("Sarah",TRUE,"Pirate"),
-        ("Alex",TRUE,"Cat"),
-        ("Peter",FALSE,NULL);
+INSERT INTO guest (name, rsvp) 
+VALUES  ("Krista",TRUE),
+        ("Jalen",TRUE),
+        ("Sarah",TRUE),
+        ("Alex",TRUE),
+        ("Peter",FALSE);
 
-INSERT INTO song (title, artist, guest)
-VALUES ("Party in the USA","Miley Cyrus","Alex"),
-        ("Celebrate","Kool & The Gang","Sarah");
+INSERT INTO song (guest, title, artist)
+VALUES ("Alex","Party in the USA","Miley Cyrus"),
+        ("Sarah","Celebrate","Kool & The Gang");
 
-INSERT INTO snack (food,guest)
-VALUES ("salsa","Krista"),
-       ("soda","Alex"),
-       ("cupcakes","Sarah");
+INSERT INTO snack (guest,food)
+VALUES ("Krista","salsa"),
+       ("Alex","soda"),
+       ("Sarah","cupcakes",);
+
+INSERT INTO costume (guest, costume)
+VALUES ("Krista","Dinosaur"),
+        ("Jalen","Pumpkin"),
+        ("Sarah","Pirate"),
+        ("Alex","Cat"),
+        ("Peter",NULL);
