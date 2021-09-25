@@ -5,18 +5,22 @@ class Costume extends Model {}
 
 Costume.init(
   {
-    guest: {
-      type: DataTypes.STRING,
+    costumeid: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "guest",
-        key: "name",
+        key: "guestid",
       },
+    },
+    guest: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
 
     costume: {
       type: DataTypes.STRING,
-    }
+    },
   },
   {
     sequelize,

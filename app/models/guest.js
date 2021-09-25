@@ -1,26 +1,30 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/config');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/config");
 
 class Guest extends Model {}
 
 Guest.init(
   {
-    name: {
-      type: DataTypes.STRING,
+    guestid: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
     },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     rsvp: {
       type: DataTypes.BOOLEAN,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'guest',
+    modelName: "guest",
   }
 );
 

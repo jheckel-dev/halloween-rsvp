@@ -5,13 +5,17 @@ class Song extends Model {}
 
 Song.init(
   {
-    guest: {
-      type: DataTypes.STRING,
+    songid: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "guest",
-        key: "name",
+        key: "guestid",
       },
+    },
+    guest: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
 
     title: {
@@ -20,7 +24,7 @@ Song.init(
 
     artist: {
       type: DataTypes.STRING,
-    }
+    },
   },
   {
     sequelize,

@@ -7,18 +7,18 @@ VALUES  ("Jalen", TRUE),
         ("Krista", TRUE),
         ("Peter", FALSE);
 
-INSERT INTO song (guest, title, artist)
-VALUES ("Alex", "Party in the USA", "Miley Cyrus"),
-        ("Sarah", "Celebrate", "Kool & The Gang");
+INSERT INTO song (songid, guest, title, artist)
+VALUES (3,"Alex", "Party in the USA", "Miley Cyrus"),
+        (2,"Sarah", "Celebrate", "Kool & The Gang");
 
-INSERT INTO snack (guest, food)
-VALUES ("Krista", "salsa"),
-       ("Alex", "soda"),
-       ("Sarah", "cupcakes",);
+INSERT INTO snack (snackid, guest, food)
+VALUES (4,"Krista", "salsa"),
+       (3,"Alex", "soda"),
+       (2,"Sarah", "cupcakes");
 
-INSERT INTO costume (guest, costume)
-VALUES ("Krista", "Dinosaur"),
-        ("Jalen", "Pumpkin"),
-        ("Sarah", "Pirate"),
-        ("Alex", "Cat"),
-        ("Peter", NULL);
+INSERT INTO costume (costumeid, guest, costume)
+VALUES (4,"Krista", "Dinosaur"),
+        (1,"Jalen", "Pumpkin"),
+        (2,"Sarah", "Pirate"),
+        (3,"Alex", "Cat"),
+        (5,"Peter", NULL);
