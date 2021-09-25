@@ -4,6 +4,10 @@ const Snack = require("./snack");
 const Song = require("./song");
 const Guest = require("./guest")
 
+Guest.hasOne(Costume, Song, Snack, {
+    foreignKey: 'guest',
+    onDelete: 'CASCADE'
+})
 
 Costume.belongsTo(Guest, {
     foreignKey: 'guest'

@@ -1,12 +1,10 @@
 const { Model, DataTypes } = require("sequelize");
-
 const sequelize = require("../config/config");
 
 class Snack extends Model {}
 
 Snack.init(
   {
-    // define columns
     food: {
       type: DataTypes.STRING,
     },

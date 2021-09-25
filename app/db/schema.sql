@@ -4,9 +4,8 @@ CREATE DATABASE party_db;
 USE party_db;
 
 CREATE TABLE guest (
-    name VARCHAR(100) PRIMARY KEY,
-    rsvp BOOLEAN,
-    costume VARCHAR(100)
+    name VARCHAR(100) NOT NULL PRIMARY KEY,
+    rsvp BOOLEAN
 );
 
 CREATE TABLE costume (
