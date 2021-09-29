@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Jalen, Krista, Alex, Sarah">
-    <title>RSVP</title>
+    <meta name="description" content="Spooktacular RSVP App">
+    <meta name="author" content="Alex, Jalen, Krista, Sarah">
+    <title>Halloween RSVP</title>
 </head>
 
 <body>
     {{!-- NAV BAR --}}
     <nav class="navbar">
         <div class="">
-            <ul class="collapse navbar-collapse ADJUST***" id="">
+            <ul class="collapse navbar-collapse" id="">
                 <li>{{!-- HOME --}}</li>
                 <li>{{!-- CREATE LOGIN // SIGN-UP --}}</li>
                 <li>{{!-- GUEST LIST --}}</li>
@@ -29,13 +29,13 @@
         </div>
     </nav>
 
-    {{!-- GUEST FORM from "Register"--}}
-    <div class="columnA">
+    {{!-- GUEST // ATTENDEE FORM from "Register"--}}
+    <div class="" id="atndForm">
         {{!-- {{{ FORM }}} --}}
     </div>
 
     {{!-- GUEST LIST from "Attendee" --}}
-    <div class="columnB">
+    <div class="" id="atndList">
         {{# if loggedin}}
             {{!-- SHOW REGISTERED GUESTS --}}
         {{else}}
@@ -44,5 +44,8 @@
     </div>
 
     {{!-- FOOTER --}}
-
+    <footer>
+        <p>Authors: Alex, Jalen, Krista, Sarah</p>
+        <p><a href="https://github.com/jheckel-dev/halloween-rsvp" target="_blank">Visit the repo!</a></p>
+    </footer>
 </body>
