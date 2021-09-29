@@ -1,25 +1,22 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/config");
 
-class Costume extends Model {}
+class Guest extends Model {}
 
-Costume.init(
+Guest.init(
   {
-    costumeid: {
+    guestid: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "guest",
-        key: "guestid",
-      },
+      primaryKey: true,
     },
-    guest: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-
-    costume: {
-      type: DataTypes.STRING,
+    rsvp: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
     },
   },
   {
@@ -27,8 +24,8 @@ Costume.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "costume",
+    modelName: "guest",
   }
 );
 
-module.exports = Costume;
+module.exports = Guest;

@@ -4,22 +4,32 @@ CREATE DATABASE party_db;
 USE party_db;
 
 CREATE TABLE guest (
-    name VARCHAR(100) PRIMARY KEY,
-    rsvp BOOLEAN,
-    costume VARCHAR(100)
+    guestid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    rsvp BOOLEAN
+);
+
+CREATE TABLE costume (
+    costumeid INT AUTO_INCREMENT PRIMARY KEY,
+    guest VARCHAR(100),
+    costume VARCHAR(100),
+    FOREIGN KEY (costumeid)
+    REFERENCES guest(guestid)
 );
 
 CREATE TABLE song (
+    songid INT AUTO_INCREMENT PRIMARY KEY,
+    guest VARCHAR(100),
     title VARCHAR(100),
     artist VARCHAR(100),
-    guest VARCHAR(100),
-    FOREIGN KEY (guest)
-    REFERENCES guest(name)
+    FOREIGN KEY (songid)
+    REFERENCES guest(guestid)
 );
 
 CREATE TABLE snack (
-    food VARCHAR(100),
+    snackid INT AUTO_INCREMENT PRIMARY KEY,
     guest VARCHAR(100),
-    FOREIGN KEY (guest)
-    REFERENCES guest(name)
+    food VARCHAR(100),
+    FOREIGN KEY (snackid)
+    REFERENCES guest(guestid)
 );
