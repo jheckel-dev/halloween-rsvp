@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Jalen, Krista, Alex, Sarah">
-    <title>RSVP</title>
+    <meta name="description" content="Spooktacular RSVP App">
+    <meta name="author" content="Alex, Jalen, Krista, Sarah">
+    <title>Halloween RSVP</title>
+    {{!-- <script src=""></script> --}}
 </head>
 
 <body>
+    {{!-- HEADER --}}
+    {{> header }}
+
     {{!-- NAV BAR --}}
     <nav class="navbar">
         <div class="">
-            <ul class="collapse navbar-collapse ADJUST***" id="">
-                <li>{{!-- HOME --}}</li>
+            <ul class="collapse navbar-collapse" id="">
+                <li><a class="nav-link" href="/">Main</a></li>
                 <li>{{!-- CREATE LOGIN // SIGN-UP --}}</li>
                 <li>{{!-- GUEST LIST --}}</li>
             </ul>
@@ -25,24 +29,29 @@
                 <li> {{!-- LOGIN BUTTON --}} </li>
                 {{/if}}
             </ul>
-
         </div>
     </nav>
 
-    {{!-- GUEST FORM from "Register"--}}
-    <div class="columnA">
-        {{!-- {{{ FORM }}} --}}
-    </div>
 
-    {{!-- GUEST LIST from "Attendee" --}}
-    <div class="columnB">
-        {{# if loggedin}}
-            {{!-- SHOW REGISTERED GUESTS --}}
-        {{else}}
-            {{!-- HIDE REGISTERED GUESTS --}}
-        {{/if}}
+    {{!-- MAIN PAGE CHUNK --}}
+    <div class ="">
+        {{!-- GUEST // ATTENDEE FORM from "Register"--}}
+        <div class="">
+            {{> register }}
+        </div>
+
+        {{!-- GUEST LIST from "Attendee" OR SING UP TO VIEW --}}       
+        <div class="">
+            {{#if loggedin}}
+                {{!-- SHOW REGISTERED GUESTS --}}
+                {{> attendee }}
+            {{else}}
+                {{> signup}}
+                {{!-- SHOW SIGN UP --}}
+            {{/if}}
+        </div>
     </div>
 
     {{!-- FOOTER --}}
-
+    {{> footer }}
 </body>

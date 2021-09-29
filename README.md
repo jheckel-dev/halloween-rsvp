@@ -32,15 +32,48 @@ Eat, Drink & Be Scary
 
 ## Description 🎃 ##
 
-Simple site using a database to allow people to rsvp to a Halloween party and request a song and share what their costume is and what snack they are bringing.
+A simple site using a database to allow people to RSVP to a Halloween party, request a song, share their costume and what snack they are bringing.
 
-Répondez s'il vous plaît
+### Project Requirements: ###
+
+🕷 Speak technically about a feature you implemented in your project
+
+🦇 Explain and execute git branching workflow in a collaborative project
+
+👻 Resolve merge conflicts
+
+🦴 Explain agile software development
+
+🍬 Design, build and deploy a full-stack web application to Heroku
+
+🐱‍👤 Prepare a professional presentation and repository README for your project
+
+_RSVP is an abbreviation for "Répondez s'il vous plaît," which means "please reply" in French._
 
 ## Installation 🎃 ##
 
+    npm install express --save
+    npm install sequelize --save
+    npm install handlebars
+    npm install passport
+    npm install tailwindcss
+
 ## Usage 🎃 ##
 
+
+
 ## Tech 🎃 ##
+
+- [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [Sequelize ORM](https://sequelize.org/)
+- [MySQL](https://www.mysql.com/)
+- [Handlebars.js](https://handlebarsjs.com/)
+- [Passport.js](http://www.passportjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Heroku](https://heroku.com/)
+
+- MVC paradigm
 
 ## Testing 🎃 ##
 
