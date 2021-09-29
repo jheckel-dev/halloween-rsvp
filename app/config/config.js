@@ -1,5 +1,3 @@
-//from the week 13 ORM homework (provided)
-
 require('dotenv').config();
 
 const Sequelize = require('sequelize');
