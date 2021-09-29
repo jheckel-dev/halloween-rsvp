@@ -1,21 +1,19 @@
-<div class="container attendee-cntr">
+<div class="container" id="attendee-cntr">
     <div class="">
-        <h2>
+        <h3>
             Attendees:
-        </h2>
+        </h3>
     </div>
-    <div class="">
-        <ul>
-            {{!-- NEED A LOOP ⭐⭐⭐ --}}
-
-            {{!-- guest.name guest.js --}}
-            
-            {{!-- costume.js --}}
-
-            {{!-- snack.js --}}
-
-            {{!-- song.js --}}
-        </ul>
+    <div class="" id="attendee-cntr-loop">
+        {{!-- <ul> --}}
+            {{!-- ARRAY --}}
+            {{#each ///}} 
+                Attendee Name: {{Guest.name}}<br/>
+                Song Choice: {{Song.title}} {{Song.artist}}<br/>
+                Costume: {{Costume.costume}}<br/>
+                Snack: {{Snack.food}}<br/>
+            {{/each}}
+        {{!-- </ul> --}}
     </div>
 </div>
 
