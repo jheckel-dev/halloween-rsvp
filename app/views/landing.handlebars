@@ -1,16 +1,63 @@
-{{!-- LANDING as MAIN CHUNK for TEST --}}
-<h1>Hello, this is landing.handlebars !!!</h1>
-
-<p>Serialize data so the template can read it.</p>
+{{!-- LANDING; if LOGGED IN, view GUEST//ATTENDEE DATA
+ELSE, view REGISTRATION FORM--}}
     {{#if logged_in}}
-        <p>do logged in magic</p>
+    {{!--Serialize data so the template can read it.--}}
+        <div class="min-h-screen flex justify-left py-8 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-sm w-full space-y-3">
+                <h1 class="text-2xl font-semibold">Attendee Information:</h1>
+                <p>Attendee Name: {{Guest.name}}</p><br/>
+                <p>Song Choice: {{Song.title}} {{Song.artist}}</p>
+                <p>Costume: {{Costume.costume}}</p>
+                <p>Snack: {{Snack.food}}</p>
+            </div>
+        </div>
     {{else}}
-        <p>not logged in magitc</p>
+        {{!-- FORM FOR GUEST/ATTENDEE REGISTRATION DATA ✨ --}}
+        <div class="min-h-screen flex justify-left py-8 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-sm w-full space-y-3">
+                <h1 class="text-2xl font-semibold">Attendee Registration:</h1>
+                {{!-- FORM // INITIAL --}}
+                <br class="mt-8 space-y-6" action="register.handlebars" method="POST" >
+                    {{!-- NAME - FIRST --}}
+                    <div class="rounded-md shadow-0 -space-y-px">
+                        <label for="//">First Name:</label></br>
+                        <input class="form-input" type="text" id="" />
+                    </div>
+                    {{!-- NAME - LAST --}}
+                    <div class="rounded-md shadow-0 -space-y-px text-">
+                        <label for="//">Last Name:</label></br>
+                        <input class="form-input" type="text" id="" />
+                    </div>
+                    {{!-- EMAIL *validation? --}}
+                    <div class="rounded-md shadow-0 -space-y-px">
+                        <label for="//">Email Address:</label></br>
+                        <input class="form-input" type="text" id="" />
+                    </div>
+                    {{!-- COSTUME --}}
+                    <div class="rounded-md shadow-0 -space-y-px">
+                        <label for="//">Costume:</label></br>
+                        <input class="form-input" type="text" id="" />
+                    </div>
+                    {{!-- SNACK --}}
+                    <div class="rounded-md shadow-0 -space-y-px">
+                        <label for="//">Snack:</label></br>
+                        <input class="form-input" type="" id="" />
+                    </div>
+                    {{!-- SONG ARTIST --}}
+                    <div class="rounded-md shadow-0 -space-y-px">
+                        <label for="//">Song Artist:</label></br>
+                        <input class="form-input" type="text" id="" />
+                    </div>
+                    {{!-- SONG TITLE --}}
+                    <div class="rounded-md shadow-0 -space-y-px">
+                        <label for="//">Song Title:</label></br>
+                        <input class="form-input" type="text" id="" />
+                    </div>
+                    {{!-- SUBMIT --}}
+                    <div class="rounded-lg shadow-0 -space-y-px">
+                        <button class="cursor-pointer bg-orange-600 hover:bg-orange-500 shadow-xl px-5 py-2 inline-block text-orange-100 hover:text-white rounded" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     {{/if}}
-
-
-<p>Attendee Name: {{Guest.name}}</p><br/>
-
-<p>   Song Choice: {{Song.title}} {{Song.artist}}</p>
-<p>   Costume: {{Costume.costume}}</p>
-<p>   Snack: {{Snack.food}}</p>

@@ -6,11 +6,36 @@
     <meta name="description" content="Spooktacular RSVP App">
     <meta name="author" content="Alex, Jalen, Krista, Sarah">
     <title>Halloween RSVP</title>
-    {{!-- <script src=""></script> --}}
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    {{!-- <link rel="stylesheet" href="styles.css"> --}}
+    <style>
+        body {background-color: rgb(146, 64, 14);}
+    </style>
 </head>
 
 <body>
-    <h1>This is main.handlebars</h1>
-        {{{ body }}}
-    <h3>After the body is here.</h3>
+    {{!-- HEADER --}}
+    {{> header }}
+
+    {{!-- NAV BAR --}}
+    <nav class="bg-yellow-800 font-sans text-center py-4 px-6 shadow w-full">
+        <div class="">
+            <ul class="nav flex justify-evenly" id="">
+                <li><a class="text-1xl font-semibold no-underline text-grey-darkest" href="/">🏠 Home</a></li>
+                <li><a class="text-1xl font-semibold no-underline text-grey-darkest" href="/">🦇 Register as User</a></li>
+                <li><a class="text-1xl font-semibold no-underline text-grey-darkest" href="/">🎃 Log In</a></li>
+                <li><a class="text-1xl font-semibold no-underline text-grey-darkest" href="/">☠ Log Out</a></li>
+                {{!-- <li>GUEST LIST</li> --}}
+            </ul>
+        </div>
+    </nav>
+
+    {{!-- BODY 💀💀💀 --}}
+    {{{ body }}}
+
+    {{!-- /// --}}
+    <img src="/app/views/images/pumpkinspicy.png" />
+
+    {{!-- FOOTER --}}
+    {{> footer }}
 </body>

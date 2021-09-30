@@ -1,45 +1,82 @@
-{{!-- 
+{{!-- TEST FILE FOR ALL MY EXTRA CODE ATTEMPTS 🎃🎃🎃 --}}
+
+{{!--
     {{!-- HEADER --}}
     {{> header }}
 
-    {{!-- NAV BAR --}}
-    <nav class="navbar">
-        <div class="">
-            <ul class="collapse navbar-collapse" id="">
-                <li><a class="nav-link" href="/">Main</a></li>
-                <li>{{!-- CREATE LOGIN // SIGN-UP --}}</li>
-                <li>{{!-- GUEST LIST --}}</li>
-            </ul>
 
-            <ul class="">
-                {{# if loggedin}}
-                <li> {{!-- LOGOUT BUTTON --}} </li>
-                {{else}}
-                <li> {{!-- LOGIN BUTTON --}} </li>
-                {{/if}}
-            </ul>
-        </div>
-    </nav>
-
-
-    {{!-- MAIN PAGE CHUNK --}}
-    <div class ="">
-        {{!-- GUEST // ATTENDEE FORM from "Register"--}}
-        <div class="">
-            {{> register }}
-        </div>
-
-        {{!-- GUEST LIST from "Attendee" OR SING UP TO VIEW --}}       
-        <div class="">
-            {{#if loggedin}}
-                {{!-- SHOW REGISTERED GUESTS --}}
-                {{> attendee }}
-            {{else}}
-                {{> signup}}
-                {{!-- SHOW SIGN UP --}}
-            {{/if}}
-        </div>
+{{!-- FORM FOR GUEST/ATTENDEE REGISTRATION DATA ✨ --}}
+<div class="main-form-container">
+    <div class="form-container">
+        <h2>Attendee Registration Form:</h2>
+        {{!-- FORM // INITIAL --}}
+        <form class="form">
+            {{!-- NAME - FIRST --}}
+            <div class="form-group">
+                <label for="//">First Name:</label>
+                <input class="form-input" type="text" id="" />
+            </div>
+            {{!-- NAME - LAST --}}
+            <div class="form-group">
+                <label for="//">Last Name:</label>
+                <input class="form-input" type="text" id="" />
+            </div>
+            {{!-- EMAIL *validation? --}}
+            <div class="form-group">
+                <label for="//">Email Address:</label>
+                <input class="form-input" type="text" id="" />
+            </div>
+            {{!-- COSTUME --}}
+            <div class="form-group">
+                <label for="//">Costume:</label>
+                <input class="form-input" type="text" id="" />
+            </div>
+            {{!-- SNACK --}}
+            <div class="form-group">
+                <label for="//">Snack:</label>
+                <input class="form-input" type="" id="" />
+            </div>
+            {{!-- SONG ARTIST --}}
+            <div class="form-group">
+                <label for="//">Song Artist:</label>
+                <input class="form-input" type="text" id="" />
+            </div>
+            {{!-- SONG TITLE --}}
+            <div class="form-group">
+                <label for="//">Song Title:</label>
+                <input class="form-input" type="text" id="" />
+            </div>
+            {{!-- SUBMIT --}}
+            <div class="form-group">
+                <button class="btn button" type="submit"></button>
+            </div>
+        </form>
     </div>
+</div>
 
-    {{!-- FOOTER --}}
-    {{> footer }} --}}
+{{!-- SCRIPT FOR JS *update --}}
+{{!-- <script src="./js/afilename.js"></script> --}}
+
+
+{{!-- ATTENDEE --}}
+<div class="">
+    <h3>
+        Attendees:
+    </h3>
+</div>
+<div class="" id="attendee-cntr-loop">
+    {{!-- ARRAY --}}
+    {{!-- correct plz --}}
+    {{#each ///}}
+        Attendee Name: {{Guest.name}}<br/>
+        {{!-- first, last? --}}
+        Song Choice: {{Song.title}} {{Song.artist}}<br/>
+        Costume: {{Costume.costume}}<br/>
+        Snack: {{Snack.food}}<br/>
+    {{/each}}
+</div>
+
+{{!-- ATTENDEES, GUESTS --}}
+{{!-- vs USERS, LOGIN CREDS --}}
+
+{{!-- PARTIAL? --}}
