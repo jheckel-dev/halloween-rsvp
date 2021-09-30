@@ -1,0 +1,20 @@
+{
+  "name": "halloween-rsvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed":
+  },
+  "author": "Alex, Jalen, Krista, Sarah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "passport": "^0.5.0",
+    "sequelize": "^6.6.5",
+    "tailwindcss": "^2.2.16"
+  }
+}
