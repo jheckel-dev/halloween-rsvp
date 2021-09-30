@@ -53,10 +53,14 @@ _RSVP is an abbreviation for "Répondez s'il vous plaît," which means "please r
 ## Installation 🎃 ##
 
     npm install express --save
+    npm install express-handlebars
+    npm install express-session
     npm install sequelize --save
-    npm install handlebars
+    npm install mysql2
     npm install passport
+    npm install bcrypt
     npm install tailwindcss
+    npm install dotenv
 
 ## Usage 🎃 ##
 
