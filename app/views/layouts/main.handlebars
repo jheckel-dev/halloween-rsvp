@@ -11,50 +11,6 @@
 
 <body>
     <h1>This is main.handlebars</h1>
-    {{{ body }}}
-
-    {{!-- HEADER --}}
-    {{> header }}
-
-    {{!-- NAV BAR --}}
-    <nav class="navbar">
-        <div class="">
-            <ul class="collapse navbar-collapse" id="">
-                <li><a class="nav-link" href="/">Main</a></li>
-                <li>{{!-- CREATE LOGIN // SIGN-UP --}}</li>
-                <li>{{!-- GUEST LIST --}}</li>
-            </ul>
-
-            <ul class="">
-                {{# if loggedin}}
-                <li> {{!-- LOGOUT BUTTON --}} </li>
-                {{else}}
-                <li> {{!-- LOGIN BUTTON --}} </li>
-                {{/if}}
-            </ul>
-        </div>
-    </nav>
-
-
-    {{!-- MAIN PAGE CHUNK --}}
-    <div class ="">
-        {{!-- GUEST // ATTENDEE FORM from "Register"--}}
-        <div class="">
-            {{> register }}
-        </div>
-
-        {{!-- GUEST LIST from "Attendee" OR SING UP TO VIEW --}}       
-        <div class="">
-            {{#if loggedin}}
-                {{!-- SHOW REGISTERED GUESTS --}}
-                {{> attendee }}
-            {{else}}
-                {{> signup}}
-                {{!-- SHOW SIGN UP --}}
-            {{/if}}
-        </div>
-    </div>
-
-    {{!-- FOOTER --}}
-    {{> footer }}
+        {{{ body }}}
+    <h3>After the body is here.</h3>
 </body>

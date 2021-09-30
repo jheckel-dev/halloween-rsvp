@@ -1,1 +1,16 @@
-<h1>Hello Landing.handlebars</h1>
+{{!-- LANDING as MAIN CHUNK for TEST --}}
+<h1>Hello, this is landing.handlebars !!!</h1>
+
+<p>Serialize data so the template can read it.</p>
+    {{#if logged_in}}
+        <p>do logged in magic</p>
+    {{else}}
+        <p>not logged in magitc</p>
+    {{/if}}
+
+
+<p>Attendee Name: {{Guest.name}}</p><br/>
+
+<p>   Song Choice: {{Song.title}} {{Song.artist}}</p>
+<p>   Costume: {{Costume.costume}}</p>
+<p>   Snack: {{Snack.food}}</p>
