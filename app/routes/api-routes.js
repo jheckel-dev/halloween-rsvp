@@ -32,7 +32,7 @@ module.exports = (app) => {
   app.post("/api/newGuest/:name", (req,res) => {
       //create new guest for party
       //set name with param and user id with current user
-      db.Guests.create({
+      db.Guest.create({
           name: req.param.name,
           id_user: req.user.id,
       }).then((response) => {
@@ -42,7 +42,7 @@ module.exports = (app) => {
 
   //route of getting all guests that are attending
   app.get("/api/allGuests", (req,res) => {
-      db.Guests.findAll({
+      db.Guest.findAll({
           where: {
               id_user: req.user.id,
           },
