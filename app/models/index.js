@@ -21,4 +21,4 @@ Snack.belongsTo(Guest, {
     foreignKey: 'guest'
 })
 
-module.exports = { Costume, User, Snack, Song };
+module.exports = { Guest, Costume, User, Snack, Song };
