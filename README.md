@@ -8,7 +8,7 @@ Eat, Drink & Be Scary
 
 ## Live Site 🎃 ##
 
-- []()
+- [https://github.com/jheckel-dev/halloween-rsvp](https://vast-savannah-66520.herokuapp.com)
 
 ## Images 🎃 ##
 
@@ -90,6 +90,6 @@ _RSVP is an abbreviation for "Répondez s'il vous plaît," which means "please r
 ## Contact 🎃 ##
 
 - [Alex's Github]()
-- [Jalen's GitHub]()
+- [Jalen's GitHub](https://github.com/jheckel-dev)
 - [Krista's Github]()
 - [Sarah's GitHub](https://github.com/SJROHRXD)
