@@ -3,6 +3,12 @@ CREATE DATABASE party_db;
 
 USE party_db;
 
+CREATE TABLE user (
+    firstName VARCHAR(100),
+    lastName VARCHAR(100),
+    email VARCHAR(100)
+);
+
 CREATE TABLE guest (
     guestid INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
