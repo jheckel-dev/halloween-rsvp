@@ -1,26 +1,33 @@
 {
-  "name": "app",
+  "name": "halloween-rsvp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eat, Drink & Be Scary",
   "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jheckel-dev/halloween-rsvp.git"
+  },
+  "author": "Alex, Jalen, Krista, Sarah",
+  "license": "ISC",
+  "homepage": "https://github.com/jheckel-dev/halloween-rsvp#readme",
   "dependencies": {
-    "autoprefixer": "^10.3.6",
     "bcrypt": "^5.0.1",
-    "connect-session-sequelize": "^7.1.2",
+    "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",
-    "sequelize": "^6.6.5",
     "tailwindcss": "^2.2.16"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
