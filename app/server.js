@@ -37,8 +37,12 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
-// app.use(express.static("/app/views/images"));
-// // why is this not working
+
+// routes throwing module not found error?
+// require("./app/routes/html-routes");
+// require("./app/routes/api-routes");
+app.use(express.static('/app/views/images'));
+
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log(`Now listening on ${PORT}!`));
