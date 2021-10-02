@@ -1,10 +1,8 @@
-const router = require('express').Router();
-// const { Project, User } = require('../models');
-// const withAuth = require('../utils/auth');
+const router = require("express").Router();
 
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
+    // Get all data and JOIN with user data
     
 
     // Serialize data so the template can read it
@@ -15,7 +13,7 @@ router.get('/', async (req, res) => {
     //     Snack: {{Snack.food}}<br/>
 
     // Pass serialized data and session flag into template
-    res.render('landing', { 
+    res.render("landing", { 
       // Guest: {
       //   name: "Sarah"
       // },
@@ -29,7 +27,6 @@ router.get('/', async (req, res) => {
       // Snack: {
       //   food: "chickenwings"
       // },
-       
       logged_in: false 
     });
   } catch (err) {
@@ -37,17 +34,14 @@ router.get('/', async (req, res) => {
   }
 });
 
-
-
-
-router.get('/login', (req, res) => {
+router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect("/");
     return;
   }
 
-  res.render('login');
+  res.render("login");
 });
 
 module.exports = router;

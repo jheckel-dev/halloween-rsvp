@@ -27,8 +27,6 @@ const hbs = exphbs.create({ helpers });
 //app.use(session(sess));
 
 
-
-
 // Inform Express.js on which template engine to use
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
@@ -39,8 +37,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
-app.use(express.static('/app/views/images'));
-// why is this not working
+// app.use(express.static("/app/views/images"));
+// // why is this not working
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log(`Now listening on ${PORT}!`));
