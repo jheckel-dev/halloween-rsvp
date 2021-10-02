@@ -8,8 +8,10 @@ Eat, Drink & Be Scary
 
 ## Live Site 🎃 ##
 
+
 - []()
 - https://vast-savannah-66520.herokuapp.com/
+
 
 ## Images 🎃 ##
 
@@ -108,6 +110,7 @@ To contribute, please do the following:
 - [See Guidelines](https://opensource.guide/legal/#which-open-source-license-is-appropriate-for-my-project)
 
 ## Contact 🎃 ##
+
 
 - [Alex's Github](https://github.com/Acarmo-D)
 - [Jalen's GitHub](https://github.com/jheckel-dev)
