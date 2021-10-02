@@ -8,33 +8,25 @@ Eat, Drink & Be Scary
 
 ## Live Site 🎃 ##
 
-
-- []()
-- https://vast-savannah-66520.herokuapp.com/
-
+- [Heroku Deploy](https://vast-savannah-66520.herokuapp.com/)
 
 ## Images 🎃 ##
 
--
--
--
+
 
 ## Table of Contents ##
 
-- [halloween-rsvp](#halloween-rsvp)
-  - [Repository 🎃](#repository-)
-  - [Live Site 🎃](#live-site-)
-  - [Images 🎃](#images-)
-  - [Table of Contents](#table-of-contents)
-  - [Description 🎃](#description-)
-    - [Project Requirements:](#project-requirements)
-  - [Installation 🎃](#installation-)
-  - [Usage 🎃](#usage-)
-  - [Tech 🎃](#tech-)
-  - [Testing 🎃](#testing-)
-  - [Contribution 🎃](#contribution-)
-  - [Licensing 🎃](#licensing-)
-  - [Contact 🎃](#contact-)
+- [Repository](#Repository-)
+- [Live Site](#Live-Site-)
+- [Images](#Images-)
+- [Description](#Description-)
+- [Installation](#Installation-)
+- [Usage](#Usage-)
+- [Tech](#Tech-)
+- [Testing](#Testing-)
+- [Contribution](#Contribution-)
+- [Licensing](#Licensing-)
+- [Contact](#Contact-)
 
 ## Description 🎃 ##
 
@@ -58,27 +50,25 @@ _RSVP is an abbreviation for "Répondez s'il vous plaît," which means "please r
 
 ## Installation 🎃 ##
 
-Deployed live on Heroku at (https://vast-savannah-66520.herokuapp.com/)
-    
 To start a local copy, follow these steps:
 
-- Clone the repo  
-    - git clone git@github.com:jheckel-dev/halloween-rsvp.git
+1. Clone the repo.
 
-- Install the following NPM packages 
-   - npm install express --save
-   - npm install express-handlebars
-   - npm install express-session
-  -  npm install sequelize --save
-  -  npm install mysql2
-  - npm install passport
-  -  npm install bcrypt
-  -  npm install tailwindcss
-  -  npm install dotenv
+2. Install the following NPM packages:
+
+    npm install express --save
+    npm install express-handlebars
+    npm install express-session
+    npm install sequelize --save
+    npm install mysql2
+    npm install passport
+    npm install bcrypt
+    npm install tailwindcss
+    npm install dotenv
 
 ## Usage 🎃 ##
 
-
+- The only restriction in regards to usage is your imagination.
 
 ## Tech 🎃 ##
 
@@ -91,19 +81,19 @@ To start a local copy, follow these steps:
 - [TailwindCSS](https://tailwindcss.com/)
 - [Heroku](https://heroku.com/)
 
-- MVC paradigm
+- The MVC Paradigm
 
 ## Testing 🎃 ##
 
 ## Contribution 🎃 ##
 
-Contributions are welcome and appreciated! 
-To contribute, please do the following:
-- Fork the project
-- Create your feature branch (git checkout -b myFeature)
-- Add/commit your changes(git add . / git commit -m "adding myFeature")
-- Push to the branch (git push origin myFeature)
-- Open a pull request
+- See Contact Information
+
+        - Fork the project
+        - Create your feature branch (git checkout -b myFeature)
+        - Add/commit your changes(git add . / git commit -m "adding myFeature")
+        - Push to the branch (git push origin myFeature)
+        - Open a pull request
 
 ## Licensing 🎃 ##
 
@@ -111,8 +101,7 @@ To contribute, please do the following:
 
 ## Contact 🎃 ##
 
-
-- [Alex's Github](https://github.com/Acarmo-D)
+- [Alex's GitHub](https://github.com/Acarmo-D)
 - [Jalen's GitHub](https://github.com/jheckel-dev)
-- [Krista's Github](https://github.com/kjnb-0)
+- [Krista's GitHub](https://github.com/kjnb-0)
 - [Sarah's GitHub](https://github.com/SJROHRXD)
