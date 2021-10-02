@@ -2,18 +2,11 @@ const router = require("express").Router();
 
 router.get("/", async (req, res) => {
   try {
-    // Get all data and JOIN with user data
-    
-
-    // Serialize data so the template can read it
-    // Attendee Name: {{Guest.name}}<br/>
-    //     {{!-- first, last? --}}
-    //     Song Choice: {{Song.title}} {{Song.artist}}<br/>
-    //     Costume: {{Costume.costume}}<br/>
-    //     Snack: {{Snack.food}}<br/>
-
-    // Pass serialized data and session flag into template
     res.render("landing", { 
+    // Get all data and JOIN with user data
+    // Serialize data so the template can read it
+    // Pass serialized data and session flag into template
+    
       // Guest: {
       //   name: "Sarah"
       // },
@@ -42,6 +35,18 @@ router.get("/login", (req, res) => {
   }
 
   res.render("login");
+});
+
+
+router.get("/signup", async (req, res) => {
+  try {
+    res.render("signup", { 
+      logged_in: false 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err);
+  }
 });
 
 module.exports = router;
