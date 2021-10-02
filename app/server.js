@@ -27,8 +27,6 @@ const hbs = exphbs.create({ helpers });
 //app.use(session(sess));
 
 
-
-
 // Inform Express.js on which template engine to use
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
@@ -38,13 +36,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
-
-// routes throwing module not found error?
-// require("./app/routes/html-routes");
-// require("./app/routes/api-routes");
-
 app.use(express.static('/app/views/images'));
-// why is this not working
+
 
 
 
