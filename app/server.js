@@ -36,12 +36,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
-
-
-// routes throwing module not found error?
-// require("./app/routes/html-routes");
-// require("./app/routes/api-routes");
 app.use(express.static('/app/views/images'));
+
+
 
 
 sequelize.sync({ force: false }).then(() => {
