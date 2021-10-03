@@ -8,7 +8,7 @@ Guest.hasOne(Costume, {
     foreignKey: 'guestid'
 });
 
-Guest.hasOne(Song, {
+Guest.hasOne(User, {
     foreignKey: 'guestid'
 });
 
@@ -16,16 +16,8 @@ Guest.hasOne(Snack, {
     foreignKey: 'guestid'
 });
 
-Costume.belongsTo(Guest, {
-    foreignKey: 'costumeid'
-});
-
-Song.belongsTo(Guest, {
-    foreignKey: 'songid'
-});
-
-Snack.belongsTo(Guest, {
-    foreignKey: 'snackid'
+Guest.hasOne(Song, {
+    foreignKey: 'guestid'
 });
 
 module.exports = { Guest, Costume, User, Snack, Song };
