@@ -4,21 +4,20 @@ const Snack = require("./snack");
 const Song = require("./song");
 const Guest = require("./guest")
 
-Guest.hasOne(Costume, Snack, Song, {
+Guest.hasOne(Costume, {
     foreignKey: 'guestid'
 });
 
-
-Costume.belongsTo(Guest, {
-    foreignKey: 'costumeid'
+Guest.hasOne(User, {
+    foreignKey: 'guestid'
 });
 
-Song.belongsTo(Guest, {
-    foreignKey: 'songid'
+Guest.hasOne(Snack, {
+    foreignKey: 'guestid'
 });
 
-Snack.belongsTo(Guest, {
-    foreignKey: 'snackid'
+Guest.hasOne(Song, {
+    foreignKey: 'guestid'
 });
 
 module.exports = { Guest, Costume, User, Snack, Song };
